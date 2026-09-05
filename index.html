@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <title>Flex · responsive</title>
+  <!-- Font Awesome for play icon (optional but used in video) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!--styles-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="#"><img src="image/logo.png" alt="logo"></a>
+    </div>
+
+    <!-- hidden checkbox for hamburger -->
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="hamburger-label">
+      <span></span><span></span><span></span>
+    </label>
+
+    <!-- desktop nav -->
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Destination</li>
+        <li>pages</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+
+    <div class="search-icon d-flex">
+      <a href="#"><img src="image/SEARCH.png" alt="search"></a>
+    </div>
+
+    <!-- mobile nav (toggled by checkbox) -->
+    <div class="mobile-nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Destination</li>
+        <li>pages</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="slider">
+      <div class="slider-text d-flex">
+        <h3>Australia</h3>
+        <p>Pixel perfect design with awesome contents</p>
+        <a href="#" class="slider-btn">Explore Now</a>
+      </div>
+    </section>
+
+    <section class="search-bar d-flex">
+      <div class="search-wrapper">
+        <h3 id="form-title">Where you want to go?</h3>
+        <form action="#" class="search-form d-flex">
+          <input type="text" placeholder="Where to go?">
+          <input type="datetime" placeholder="Date">
+          <input type="text" placeholder="Travel type">
+          <button class="search-btn" type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="popular">
+      <div class="popular-heading">
+        <h3 class="popular-title">Popular Destination</h3>
+        <p class="popular-description1">Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words</p>
+        <p class="popular-description2">randomised booth anim 8-bit hella wolf moon beard words</p>
+      </div>
+
+      <div class="travel-gallery">
+        <div class="gallery-container">
+          <article class="card"><img src="image/1.png" alt="Italy"><div class="card-overlay"><span class="card-title">Italy</span><a href="#">12 Places</a></div></article>
+          <article class="card"><img src="image/2.png" alt="Brazil"><div class="card-overlay"><span class="card-title">Brazil</span><a href="#">12 Places</a></div></article>
+          <article class="card"><img src="image/3.png" alt="America"><div class="card-overlay"><span class="card-title">America</span><a href="#">12 Places</a></div></article>
+          <article class="card"><img src="image/4.png" alt="Nepal"><div class="card-overlay"><span class="card-title">Nepal</span><a href="#">12 Places</a></div></article>
+          <article class="card"><img src="image/5.png" alt="Maldives"><div class="card-overlay"><span class="card-title">Maldives</span><a href="#">12 Places</a></div></article>
+          <article class="card"><img src="image/6.png" alt="Indonesia"><div class="card-overlay"><span class="card-title">Indonesia</span><a href="#">12 Places</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter d-flex">
+      <div class="overlay"></div>
+      <div class="newsletter-container">
+        <div class="newsletter-text">
+          <h4>Subscribe Our Newsletter</h4>
+          <p>Subscribe newsletter to get offers and about new places to discover.</p>
+        </div>
+        <div class="mail-form">
+          <input type="email" placeholder="Your Mail">
+          <a href="#"><button class="newsletter-btn" type="submit">Subscribe</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="video">
+      <div class="video-container d-flex">
+        <h3>Enjoy Video</h3>
+        <div class="video-button d-flex">
+          <a href="#"><i class="fa fa-play"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="left-footer">
+      <img src="image/footer_logo.png" alt="footer logo" class="footer-img">
+      <ul class="footer-info">
+        <li>5th flora, 700/D kings road, green</li>
+        <li>lane New York-1782</li>
+        <li>+10 367 826 2567</li>
+        <li>contact@carpenter.com</li>
+      </ul>
+    </div>
+    <div class="right-footer">
+      <h3 class="footer-title">Popular Destination</h3>
+      <ul class="links">
+        <li><a href="#">Indonesia</a></li>
+        <li><a href="#">India</a></li>
+        <li><a href="#">France</a></li>
+        <li><a href="#">Switzerland</a></li>
+        <li><a href="#">Italy</a></li>
+        <li><a href="#">America</a></li>
+        <li><a href="#">Canada</a></li>
+        <li><a href="#">England</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
