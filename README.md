@@ -45,7 +45,7 @@ Installation
 Clone the repository
 
 bash
-git clone https://github.com/Alicode44/-Flex---Travel-Destination-Explorer.git
+git clone https://github.com/Alicode44/flex-travel.git
 Navigate to project folder
 
 bash
