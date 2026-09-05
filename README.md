@@ -118,7 +118,7 @@ Open a Pull Request
 This project is open source and available under the MIT License.
 
 📬 Contact
-Project Link: https://github.com/Alicode44/flex-travel
+Project Link:https://github.com/Alicode44/-Flex---Travel-Destination-Explorer.git
 🙏 Acknowledgments
 Design inspiration from modern travel agency layouts
 
