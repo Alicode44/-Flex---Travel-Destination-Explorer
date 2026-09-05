@@ -123,4 +123,5 @@ Project Link:https://github.com/Alicode44/-Flex---Travel-Destination-Explorer.gi
 Design inspiration from modern travel agency layouts
 
 Icons by Font Awesome
+Author: Alicode44
 	
