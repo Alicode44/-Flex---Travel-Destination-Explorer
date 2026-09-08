@@ -123,9 +123,16 @@ Project Link:https://github.com/Alicode44/-Flex---Travel-Destination-Explorer.gi
 
 
 Live Demo Link: https://alicode44.github.io/-Flex---Travel-Destination-Explorer/
+
+
 🙏 Acknowledgments
+
+
 Design inspiration from modern travel agency layouts
 
+
 Icons by Font Awesome
+
+
 Author: Alicode44
 	
