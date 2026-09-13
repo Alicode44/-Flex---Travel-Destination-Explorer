@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
-  <title>Flex · responsive</title>
-  <!-- Font Awesome for play icon (optional but used in video) -->
+  <title>Flex · Responsive Travel</title>
+  <meta name="description" content="Explore popular destinations with Flex — a fully responsive travel website built with pure HTML & CSS.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!--styles-->
   <link rel="stylesheet" href="style.css">
@@ -12,46 +12,39 @@
 <body>
   <header>
     <div class="logo">
-      <a href="#"><img src="image/logo.png" alt="logo"></a>
+      <a href="#" aria-label="Flex Travel Home">
+        <img src="image/logo.png" alt="Flex Travel Logo">
+      </a>
     </div>
 
     <!-- hidden checkbox for hamburger -->
-    <input type="checkbox" id="nav-toggle">
-    <label for="nav-toggle" class="hamburger-label">
+    <input type="checkbox" id="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="hamburger-label" aria-label="Toggle navigation menu">
       <span></span><span></span><span></span>
     </label>
 
-    <!-- desktop nav -->
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Destination</li>
-        <li>pages</li>
-        <li>Blog</li>
-        <li>Contact</li>
+    <!-- SINGLE nav — transforms into mobile dropdown via CSS -->
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
 
     <div class="search-icon d-flex">
-      <a href="#"><img src="image/SEARCH.png" alt="search"></a>
-    </div>
-
-    <!-- mobile nav (toggled by checkbox) -->
-    <div class="mobile-nav">
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Destination</li>
-        <li>pages</li>
-        <li>Blog</li>
-        <li>Contact</li>
-      </ul>
+      <a href="#" aria-label="Search">
+        <img src="image/SEARCH.png" alt="Search icon">
+      </a>
     </div>
   </header>
 
   <main>
-    <section class="slider">
+    <!-- Hero -->
+    <section class="slider" aria-label="Hero banner">
       <div class="slider-text d-flex">
         <h3>Australia</h3>
         <p>Pixel perfect design with awesome contents</p>
@@ -59,22 +52,26 @@
       </div>
     </section>
 
-    <section class="search-bar d-flex">
+    <!-- Search -->
+    <section class="search-bar d-flex" aria-label="Destination search">
       <div class="search-wrapper">
         <h3 id="form-title">Where you want to go?</h3>
-        <form action="#" class="search-form d-flex">
-          <input type="text" placeholder="Where to go?">
-          <input type="datetime" placeholder="Date">
-          <input type="text" placeholder="Travel type">
+        <form action="#" class="search-form d-flex" role="search">
+          <input type="text" placeholder="Where to go?" aria-label="Destination">
+          <input type="date" placeholder="Date" aria-label="Travel date">
+          <input type="text" placeholder="Travel type" aria-label="Travel type">
           <button class="search-btn" type="submit">Search</button>
         </form>
       </div>
     </section>
 
-    <section class="popular">
+    <!-- Popular destinations -->
+    <section class="popular" aria-labelledby="popular-title">
       <div class="popular-heading">
-        <h3 class="popular-title">Popular Destination</h3>
-        <p class="popular-description1">Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words</p>
+        <h3 class="popular-title" id="popular-title">Popular Destination</h3>
+        <p class="popular-description1">
+          Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words
+        </p>
         <p class="popular-description2">randomised booth anim 8-bit hella wolf moon beard words</p>
       </div>
 
@@ -90,7 +87,8 @@
       </div>
     </section>
 
-    <section class="newsletter d-flex">
+    <!-- Newsletter -->
+    <section class="newsletter d-flex" aria-label="Newsletter subscription">
       <div class="overlay"></div>
       <div class="newsletter-container">
         <div class="newsletter-text">
@@ -98,25 +96,27 @@
           <p>Subscribe newsletter to get offers and about new places to discover.</p>
         </div>
         <div class="mail-form">
-          <input type="email" placeholder="Your Mail">
+          <input type="email" placeholder="Your Mail" aria-label="Email address">
           <a href="#"><button class="newsletter-btn" type="submit">Subscribe</button></a>
         </div>
       </div>
     </section>
 
-    <section class="video">
+    <!-- Video -->
+    <section class="video" aria-label="Promotional video">
       <div class="video-container d-flex">
         <h3>Enjoy Video</h3>
         <div class="video-button d-flex">
-          <a href="#"><i class="fa fa-play"></i></a>
+          <a href="#" aria-label="Play video"><i class="fa fa-play"></i></a>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="left-footer">
-      <img src="image/footer_logo.png" alt="footer logo" class="footer-img">
+      <img src="image/footer_logo.png" alt="Flex Travel footer logo" class="footer-img">
       <ul class="footer-info">
         <li>5th flora, 700/D kings road, green</li>
         <li>lane New York-1782</li>
